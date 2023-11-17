@@ -6,9 +6,9 @@ TorrentSearchApi.enableProvider("Torrent9");
 
 let magnetLinks = [];
 
-const getTorrent = async (name, limit = 20) => {
+const getTorrent = async (name) => {
   try {
-    const torrents = await TorrentSearchApi.search(name, "All", limit); // Limiting the search results to 'limit'
+    const torrents = await TorrentSearchApi.search(name); // Limiting the search results to 'limit'
 
     for (const torrent of torrents) {
       const magnetLink = await TorrentSearchApi.getMagnet(torrent);
