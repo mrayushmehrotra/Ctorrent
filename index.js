@@ -25,7 +25,10 @@ const getTorrent = async (name, limit = 20) => {
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  res.status(200).json({ magnetLinks });
+  res.status(200).json({
+    success: true,
+    message: "Server is Working Fine",
+  });
 });
 
 app.post("/search/:id", async (req, res) => {
