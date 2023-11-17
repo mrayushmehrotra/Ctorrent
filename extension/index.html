@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CTorrent</title>
+  </head>
+  <body>
+    <section class="title">CTorrent</section>
+    <hr />
+    <section class="search">
+        <input />
+    </section>
+    <section class="files">
+      <h4>{name}</h4>
+
+
+      <button onClick={(link)=>{
+        navigator.clipboard.copy()
+    }
+      </button>  >{magnet Link}</button>
+    </section>
+  </body>
+  <script>
+    fetch("https://ctorrent.vercel.app/",{
+        method:POST,
+        body:id
+    })
+  </script>
+</html>

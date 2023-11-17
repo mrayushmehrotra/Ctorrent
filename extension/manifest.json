@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "CTorrent",
+  "description": "Search Torrent Files within the extension.",
+  "version": "1.0",
+  "permissions": ["scripting", "activeTab"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icon.png"
+    }
+  }
+}
